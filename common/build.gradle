@@ -10,6 +10,10 @@ loom {
 repositories {
     mavenCentral()
     maven {
+        name = 'aikar'
+        url = 'https://repo.aikar.co/content/groups/aikar'
+    }
+    maven {
         name = 'GriefDefender'
         url = 'https://repo.glaremasters.me/repository/bloodshot'
     }
@@ -37,6 +41,7 @@ dependencies {
     modCompileOnly("net.fabricmc.fabric-api:fabric-api:${fabric_api_version}")
 
     compileOnly "com.griefdefender:api:${griefdefender_version}"
+    compileOnly "net.kyori:event-api:5.0.0-SNAPSHOT"
 }
 
 publishing {
