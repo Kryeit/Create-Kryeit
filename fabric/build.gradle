@@ -20,6 +20,12 @@ configurations {
 }
 
 repositories {
+    mavenCentral()
+    maven {
+        name = 'GriefDefender'
+        url = 'https://repo.glaremasters.me/repository/bloodshot'
+    }
+
     maven { url = "https://api.modrinth.com/maven" } // LazyDFU
     maven { url = "https://maven.terraformersmc.com/releases/" } // Mod Menu
     maven { url = "https://mvn.devos.one/snapshots/" } // Create, Porting Lib, Forge Tags, Milk Lib, Registrate
@@ -42,6 +48,9 @@ dependencies {
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
+    compileOnly "com.griefdefender:api:${griefdefender_version}"
+
+
 }
 
 processResources {

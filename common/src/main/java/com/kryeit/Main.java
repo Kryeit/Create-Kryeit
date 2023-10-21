@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static final String MOD_ID = "missions";
+    public static final String MOD_ID = "kryeit";
     public static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
 

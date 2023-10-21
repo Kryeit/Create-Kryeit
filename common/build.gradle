@@ -8,6 +8,12 @@ loom {
 }
 
 repositories {
+    mavenCentral()
+    maven {
+        name = 'GriefDefender'
+        url = 'https://repo.glaremasters.me/repository/bloodshot'
+    }
+
     // mavens for Create Fabric and dependencies
     maven { url = "https://api.modrinth.com/maven" } // LazyDFU
     maven { url = "https://mvn.devos.one/snapshots/" } // Create Fabric, Porting Lib, Forge Tags, Milk Lib, Registrate Fabric
@@ -29,6 +35,8 @@ dependencies {
     // Flywheel and Registrate must also be used carefully due to differences.
     modCompileOnly("com.simibubi.create:create-fabric-${minecraft_version}:${create_fabric_version}")
     modCompileOnly("net.fabricmc.fabric-api:fabric-api:${fabric_api_version}")
+
+    compileOnly "com.griefdefender:api:${griefdefender_version}"
 }
 
 publishing {

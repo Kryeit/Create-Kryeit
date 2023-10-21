@@ -6,9 +6,6 @@
   "client": [
   ],
   "mixins": [
-    "CrushingWheelControllerBlockEntityMixin",
-    "MillstoneBlockEntityMixin",
-    "SawBlockEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

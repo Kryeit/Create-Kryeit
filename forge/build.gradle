@@ -28,6 +28,11 @@ configurations {
 }
 
 repositories {
+    mavenCentral()
+    maven {
+        name = 'GriefDefender'
+        url = 'https://repo.glaremasters.me/repository/bloodshot'
+    }
     maven { // Create Forge and Registrate Forge
         url = "https://maven.tterrag.com/"
     }
@@ -42,6 +47,7 @@ dependencies {
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+    compileOnly "com.griefdefender:api:${griefdefender_version}"
 }
 
 processResources {
