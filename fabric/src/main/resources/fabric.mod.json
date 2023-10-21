@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "missions",
+  "id": "kryeit",
   "version": "${version}",
-  "name": "Missions",
+  "name": "Kryeit",
   "description": "Weekly missions!",
   "authors": [
     "MuriPlz",
@@ -10,7 +10,7 @@
   ],
   "contact": {
     "homepage": "https://kryeit.com/",
-    "sources": "https://github.com/Kryeit/Missions"
+    "sources": "https://github.com/muriplz/Create-Kryeit"
   },
   "license": "MIT",
   "icon": "logo.png",
@@ -20,7 +20,6 @@
       "com.kryeit.MainFabric"
     ],
     "client": [
-      "com.kryeit.client.ClientEntryPoint"
     ]
   },
   "mixins": [

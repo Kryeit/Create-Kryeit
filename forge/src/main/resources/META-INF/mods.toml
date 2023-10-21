@@ -4,23 +4,23 @@ loaderVersion = "[47,)"
 license = "MIT"
 
 [[mods]]
-modId = "missions"
+modId = "kryeit"
 version = "${version}"
 displayName = "Missions"
 authors = "MrRedRhino, MuriPlz"
 description = '''
-Missions here and there :P
+Claiming compatibility mod between Create mod and GriefDefender :P
 '''
 #logoFile = ""
 
-[[dependencies.missions]]
+[[dependencies.kryeit]]
 modId = "forge"
 mandatory = true
 versionRange = "[47,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.missions]]
+[[dependencies.kryeit]]
 modId="create"
 mandatory=true
 versionRange="[0.5.1.d,)"

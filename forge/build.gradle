@@ -14,8 +14,8 @@ loom {
         convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
 
-        mixinConfig "missions-common.mixins.json"
-        mixinConfig "missions.mixins.json"
+        mixinConfig "kryeit-common.mixins.json"
+        mixinConfig "kryeit.mixins.json"
     }
 }
 
