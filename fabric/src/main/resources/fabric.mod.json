@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "missions",
+  "version": "${version}",
+  "name": "Missions",
+  "description": "Weekly missions!",
+  "authors": [
+    "MuriPlz",
+    "MrRedRhino"
+  ],
+  "contact": {
+    "homepage": "https://kryeit.com/",
+    "sources": "https://github.com/Kryeit/Missions"
+  },
+  "license": "MIT",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.kryeit.MainFabric"
+    ],
+    "client": [
+      "com.kryeit.client.ClientEntryPoint"
+    ]
+  },
+  "mixins": [
+    "missions.mixins.json",
+    "missions-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "fabric-key-binding-api-v1": "*",
+    "minecraft": "1.20.1",
+    "create": "*",
+    "fabric-networking-api-v1": "*"
+  }
+}

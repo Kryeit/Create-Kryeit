@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.kryeit.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "CrushingWheelControllerBlockEntityMixin",
+    "ExchangeATMBlockEntityMixin",
+    "MillstoneBlockEntityMixin",
+    "SawBlockEntityMixin",
+    "event.CraftHandler",
+    "event.FishHandler"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

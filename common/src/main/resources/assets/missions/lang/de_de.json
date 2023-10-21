@@ -1,0 +1,23 @@
+{
+  "itemGroup.missions": "Create: Missions",
+  "missions.menu.key": "Öffne Missions Interface",
+  "missions.key.category": "Missions",
+  "missions.menu.reroll.title": "Mission Reroll Menu",
+  "missions.menu.reroll.reroll": "Reroll",
+  "missions.menu.close": "Schließen",
+  "missions.menu.main.rewards": "Preise",
+  "missions.menu.main.title": "Missions Interface",
+  "missions.menu.main.tooltip.details": "Details",
+  "missions.menu.main.tooltip.task": "Aufgabe: %s",
+  "missions.menu.main.tooltip.difficulty": "Schwierigkeit: %s",
+  "missions.menu.main.tooltip.itemRequired": "Benötigtes Item: %s",
+  "missions.menu.main.tooltip.reward": "Reward: %s of %s",
+  "missions.menu.main.tooltip.progress": "Dein Fortschritt: %s",
+  "missions.menu.main.tooltip.progress.completed": "Vollendet",
+  "missions.menu.main.reward": "You've been awarded %s of %s",
+  "missions.difficulty.easy": "Einfach",
+  "missions.difficulty.normal": "Normal",
+  "missions.difficulty.hard": "Schwer",
+  "block.missions.exchange_atm": "Geldwechsel Automat",
+  "missions.message.hard_mission_completed": "%s hat gerade eine schwierige Mission vollendet!"
+}
