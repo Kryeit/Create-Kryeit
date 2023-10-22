@@ -37,6 +37,15 @@ repositories {
         name = 'GriefDefender'
         url = 'https://repo.glaremasters.me/repository/bloodshot'
     }
+    maven {
+        name = 'sonatype_releases'
+        url = 'https://oss.sonatype.org/content/repositories/releases'
+    }
+    maven {
+        name = 'sonatype_snapshots'
+        url = 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+
     maven { // Create Forge and Registrate Forge
         url = "https://maven.tterrag.com/"
     }
@@ -52,7 +61,6 @@ dependencies {
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
     compileOnly "com.griefdefender:api:${griefdefender_version}"
-    compileOnly "net.kyori:event-api:5.0.0-SNAPSHOT"
 }
 
 processResources {

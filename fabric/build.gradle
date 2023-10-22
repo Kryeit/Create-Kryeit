@@ -29,6 +29,14 @@ repositories {
         name = 'GriefDefender'
         url = 'https://repo.glaremasters.me/repository/bloodshot'
     }
+    maven {
+        name = 'sonatype_releases'
+        url = 'https://oss.sonatype.org/content/repositories/releases'
+    }
+    maven {
+        name = 'sonatype_snapshots'
+        url = 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
 
     maven { url = "https://api.modrinth.com/maven" } // LazyDFU
     maven { url = "https://maven.terraformersmc.com/releases/" } // Mod Menu
@@ -53,7 +61,6 @@ dependencies {
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
     compileOnly "com.griefdefender:api:${griefdefender_version}"
-    compileOnly "net.kyori:event-api:5.0.0-SNAPSHOT"
 
 }
 

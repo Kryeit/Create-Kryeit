@@ -17,6 +17,14 @@ repositories {
         name = 'GriefDefender'
         url = 'https://repo.glaremasters.me/repository/bloodshot'
     }
+    maven {
+        name = 'sonatype_releases'
+        url = 'https://oss.sonatype.org/content/repositories/releases'
+    }
+    maven {
+        name = 'sonatype_snapshots'
+        url = 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
 
     // mavens for Create Fabric and dependencies
     maven { url = "https://api.modrinth.com/maven" } // LazyDFU
@@ -41,7 +49,6 @@ dependencies {
     modCompileOnly("net.fabricmc.fabric-api:fabric-api:${fabric_api_version}")
 
     compileOnly "com.griefdefender:api:${griefdefender_version}"
-    compileOnly "net.kyori:event-api:5.0.0-SNAPSHOT"
 }
 
 publishing {
