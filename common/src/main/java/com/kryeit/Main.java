@@ -1,17 +1,10 @@
 package com.kryeit;
 
+import com.kryeit.event.*;
+import com.kryeit.listener.test;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import net.minecraft.network.chat.Component;
-import net.minecraft.stats.Stats;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static final String MOD_ID = "kryeit";
@@ -19,6 +12,7 @@ public class Main {
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
 
     public static void init() {
+        TrainRelocateEvent.EVENT.register(new test());
     }
 
     public static CreateRegistrate registrate() {

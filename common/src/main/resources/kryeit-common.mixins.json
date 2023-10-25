@@ -6,6 +6,17 @@
   "client": [
   ],
   "mixins": [
+    "MinecraftServerMixin",
+    "create.MixinContraptionInteractionPacket",
+    "create.testedCancellable.MixinControlsInputPacket",
+    "create.MixinCreateBlockEntityConfigurationPacket",
+    "create.MixinCreateKineticBlockEntity",
+    "create.MixinCreateSchematicannonBlockEntity",
+    "create.MixinDeployerBlockEntity",
+    "create.testedCancellable.MixinSuperGlueRemovalPacket",
+    "create.testedCancellable.MixinSuperGlueSelectionPacket",
+    "create.MixinToolboxDisposeAllPacket",
+    "create.testedCancellable.MixinTrainRelocationPacket"
   ],
   "injectors": {
     "defaultRequire": 1

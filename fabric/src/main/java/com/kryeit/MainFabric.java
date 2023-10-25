@@ -1,7 +1,6 @@
 package com.kryeit;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 
 public class MainFabric implements ModInitializer {
 
